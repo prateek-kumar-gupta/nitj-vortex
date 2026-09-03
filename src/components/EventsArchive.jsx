@@ -1,4 +1,4 @@
-﻿import React, { useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 
 export default function EventsArchive({ events, onSelectEvent }) {
   const trackRef = useRef(null);
@@ -49,7 +49,7 @@ export default function EventsArchive({ events, onSelectEvent }) {
     <section id="events" className="events-section">
       <div className="events-heading">
         <div>
-          <h2>Previous Events<span>.</span></h2>
+          <h2>Previous Events</h2>
         </div>
         <p className="section-intro">
           Relive the battles, highlights and campus experiences that helped build VORTEX. Select an event to explore its full story.
@@ -82,7 +82,7 @@ export default function EventsArchive({ events, onSelectEvent }) {
             >
               <div 
                 className="card-art" 
-                style={{ backgroundImage: `url('assets/${e.slug}.jpg')` }}
+                style={{ backgroundImage: `url('${e.poster || `assets/${e.slug}.jpg`}')` }}
               ></div>
               <div className="card-shade"></div>
               <div className="card-top">

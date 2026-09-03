@@ -23,7 +23,7 @@ export default function AchievementsSection() {
     <section id="achievements" className="achievements-section">
       <div className="section-header">
         <p className="eyebrow">HALL OF FAME</p>
-        <h2>Achievements<span>.</span></h2>
+        <h2>Achievements</h2>
       </div>
       
       <div className="achievements-grid">

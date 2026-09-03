@@ -51,7 +51,7 @@ export default function UpcomingModal({ isOpen, onClose }) {
         </button>
         <div className="upcoming-modal-top">
           <p className="modal-kicker">NEXT VORTEX EVENT</p>
-          <h2 id="upcomingTitle">THE NEXT<br /><span>CHALLENGE.</span></h2>
+          <h2 id="upcomingTitle">THE NEXT<br /><span>CHALLENGE</span></h2>
           <p>Official event details will be announced soon.</p>
         </div>
         <div className="upcoming-hero">

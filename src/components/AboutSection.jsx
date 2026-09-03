@@ -13,7 +13,7 @@ export default function AboutSection() {
       <div className="manifesto-content">
         <div className="manifesto-header">
           <p className="eyebrow">THE VORTEX INITIATIVE</p>
-          <h2>More than a club.<br /><span>A gaming legacy.</span></h2>
+          <h2>More than a club<br /><span>A gaming legacy</span></h2>
         <p className="manifesto-desc">
           The ultimate esports battleground at NIT Jalandhar. We unite gamers, forge champions, and build a legacy beyond the screen. Whether you're a casual player looking for a squad or a fierce competitor aiming for the leaderboards, VORTEX is your home. We host high-stakes tournaments, interactive game nights, and elite campus leagues to push the boundaries of collegiate esports.
         </p>

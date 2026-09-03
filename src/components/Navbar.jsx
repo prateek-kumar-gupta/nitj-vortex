@@ -24,7 +24,7 @@ export default function Navbar() {
     <header className="nav">
       <a className="brand" href="#home" onClick={closeMenu}>
         <img src="assets/vortex-logo.jpg" alt="VORTEX logo" />
-        <span>VORTEX<span className="dot">.</span></span>
+        <span>VORTEX</span>
       </a>
       <button 
         className="menu" 

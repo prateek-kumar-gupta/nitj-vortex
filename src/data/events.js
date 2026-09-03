@@ -1,10 +1,10 @@
-﻿export const events = [
+export const events = [
   {
     number: '01',
     slug: 'arena-x',
     title: 'ARENA-X',
-    subtitle: 'Where Legends Were Made',
-    kicker: 'EVENT HIGHLIGHTS',
+    subtitle: 'Part of Utkansh — The Biggest College Tech Fest',
+    kicker: 'UTKANSH TECH FEST',
     date: '16 April 2026',
     venue: 'NIT Jalandhar',
     format: 'Multi-game gaming event',
@@ -12,11 +12,22 @@
     game: 'ARENA-X',
     tag: 'MULTI-GAME',
     participants: '1200+',
-    description: 'The battlefield was set, the energy was unreal, and the competition brought gamers together for an intense VORTEX experience across multiple titles.',
-    winners: [
-      { place: '1st Place', name: 'Arjun Mehta', image: 'assets/winner-01.jpg', role: 'Champion' },
-      { place: '2nd Place', name: 'Rohan Kapoor', image: 'assets/winner-02.jpg', role: 'Runner-up' },
-      { place: '3rd Place', name: 'Vihaan Sharma', image: 'assets/winner-03.jpg', role: '3rd Place' }
+    description: 'Organized as part of Utkansh, the biggest college tech fest, ARENA-X set the campus ablaze. The battlefield was set, the energy was unreal, and the competition brought gamers together for an intense VORTEX experience across multiple titles.',
+    poster: 'assets/arena-x.jpg',
+    positions: [
+      { place: '1st Place', image: 'events-gallery/ARENA-X/Positions/1st.jpg' },
+      { place: '2nd Place', image: 'events-gallery/ARENA-X/Positions/2nd.jpg' },
+      { place: '3rd Place', image: 'events-gallery/ARENA-X/Positions/3rd.jpg' }
+    ],
+    highlights: [
+      'events-gallery/ARENA-X/IMG_7777.jpg',
+      'events-gallery/ARENA-X/IMG_7778.jpg',
+      'events-gallery/ARENA-X/IMG_7779.jpg',
+      'events-gallery/ARENA-X/IMG_7780.jpg',
+      'events-gallery/ARENA-X/IMG_7781.jpg',
+      'events-gallery/ARENA-X/IMG_7782.jpg',
+      'events-gallery/ARENA-X/IMG_7786.jpg',
+      'events-gallery/ARENA-X/IMG_7789.jpg'
     ]
   },
   {
@@ -32,29 +43,54 @@
     game: 'KREO AERO KLASH',
     tag: 'FREE CAMPUS EVENT',
     participants: '420+',
-    description: 'Kreo Aero Klash was an unconventional and wildly popular physical gaming challenge held at the MBH Ground. Moving away from the screens, hundreds of students tested their precision and aerodynamics by constructing and launching paper gliders. The atmosphere was charged with high-energy music, roaring crowds, and fierce competition. The undisputed champion who achieved the longest sustained flight walked away with the grand prize—a brand-new Surge XB gaming controller.',
-    winners: [
-      { place: 'Winner', name: 'Aarav Khanna', image: 'assets/winner-04.jpg', role: 'Longest Flight' }
+    description: 'Kreo Aero Klash was an unconventional and wildly popular physical gaming challenge held at the MBH Ground. Moving away from the screens, hundreds of students tested their precision and aerodynamics by constructing and launching paper gliders. The atmosphere was charged with high-energy music, roaring crowds, and fierce competition.',
+    poster: 'assets/kreo-aero-klash.jpg',
+    positions: null,
+    highlights: [
+      'events-gallery/AERO KLASH/IMG_0298.jpg',
+      'events-gallery/AERO KLASH/IMG_0316.jpg',
+      'events-gallery/AERO KLASH/IMG_0330.jpg',
+      'events-gallery/AERO KLASH/IMG_1183.jpg',
+      'events-gallery/AERO KLASH/IMG_1192.jpg',
+      'events-gallery/AERO KLASH/IMG_1216.jpg'
     ]
   },
   {
     number: '03',
     slug: 'monster-campus-unleashed',
     title: 'MONSTER CAMPUS UNLEASHED',
-    subtitle: 'BGMI Fest at NIT Jalandhar',
-    kicker: 'BGMI EVENT',
+    subtitle: 'BGMI Fest Sponsored by Monster Energy',
+    kicker: 'MONSTER ENERGY BGMI',
     date: '28–29 August 2026',
     venue: 'NIT Jalandhar',
     format: 'BGMI',
     prize: '₹10,000',
     game: 'BGMI',
-    tag: 'MONSTER CAMPUS',
+    tag: 'MONSTER ENERGY',
     participants: '500+',
-    description: 'Monster Campus Unleashed brought a BGMI-focused gaming fest to NIT Jalandhar, with a ₹10,000 prize pool and a full campus esports atmosphere.',
-    winners: [
-      { place: '1st Place', name: 'Dev Verma', image: 'assets/winner-07.jpg', role: 'Champion' },
-      { place: '2nd Place', name: 'Aditya Sethi', image: 'assets/winner-08.jpg', role: 'Runner-up' },
-      { place: '3rd Place', name: 'Kabir Malhotra', image: 'assets/winner-09.jpg', role: '3rd Place' }
+    description: 'Monster Campus Unleashed brought an electrifying BGMI-focused gaming fest to NIT Jalandhar, proudly sponsored by Monster Energy with a ₹10,000 prize pool and a roaring campus esports atmosphere.',
+    poster: 'assets/monster-campus-unleashed.jpg',
+    positions: [
+      { place: 'Winner', image: 'events-gallery/MONSTER/Positions/Winner.jpg' },
+      { place: 'Winner', image: 'events-gallery/MONSTER/Positions/Winner2.jpg' }
+    ],
+    highlights: [
+      'events-gallery/MONSTER/IMG_1713.jpg',
+      'events-gallery/MONSTER/IMG_1721.jpg',
+      'events-gallery/MONSTER/IMG_1740.jpg',
+      'events-gallery/MONSTER/IMG_1752.jpg',
+      'events-gallery/MONSTER/IMG_1637.jpg',
+      'events-gallery/MONSTER/IMG_1661.jpg',
+      'events-gallery/MONSTER/IMG_2679.jpg',
+      'events-gallery/MONSTER/IMG-20260828-WA0034.jpeg',
+      'events-gallery/MONSTER/IMG-20260828-WA0038.jpg',
+      'events-gallery/MONSTER/IMG-20260828-WA0108.jpg',
+      'events-gallery/MONSTER/IMG_20260828_142842.jpg',
+      'events-gallery/MONSTER/IMG_20260828_155850.jpg',
+      'events-gallery/MONSTER/IMG_20260828_163042.jpg',
+      'events-gallery/MONSTER/IMG_20260829_143229.jpg',
+      'events-gallery/MONSTER/IMG_20260829_151322.jpg',
+      'events-gallery/MONSTER/IMG_20260829_151401.jpg'
     ]
   },
   {
@@ -71,30 +107,105 @@
     tag: 'SOLO MODE',
     participants: '400+',
     description: 'One player. One chance. One winner. BGMI Showdown was a solo competition built around survival, skill and the final player standing.',
-    winners: [
-      { place: '1st Place', name: 'Parth Shah', image: 'assets/winner-10.jpg', role: 'Champion' },
-      { place: '2nd Place', name: 'Ishaan Arora', image: 'assets/winner-11.jpg', role: 'Runner-up' },
-      { place: '3rd Place', name: 'Rudra Mehta', image: 'assets/winner-12.jpg', role: '3rd Place' }
+    poster: 'assets/bgmi-showdown.jpg',
+    positions: null,
+    highlights: [
+      'events-gallery/BGMI SHOWDOWN/IMG_1347.jpg',
+      'events-gallery/BGMI SHOWDOWN/IMG_1348.jpg',
+      'events-gallery/BGMI SHOWDOWN/IMG_1381.jpg',
+      'events-gallery/BGMI SHOWDOWN/IMG_1404.jpg',
+      'events-gallery/BGMI SHOWDOWN/IMG_1416.jpg',
+      'events-gallery/BGMI SHOWDOWN/IMG_1418.jpg'
     ]
   },
   {
     number: '05',
     slug: 'tez-ffmic-springs',
     title: 'TEZ FFMIC SPRINGS 2026',
-    subtitle: 'Watch Party',
-    kicker: 'WATCH PARTY',
+    subtitle: 'Watch Party & Competition',
+    kicker: 'FFMIC EVENT',
     date: '25–26 April 2026',
     venue: 'NIT Jalandhar',
     format: 'FC Mobile / FFMIC',
-    prize: 'Watch Party',
+    prize: 'Campus Event',
     game: 'TEZ FFMIC SPRINGS 2026',
-    tag: 'WATCH PARTY',
+    tag: 'FFMIC EVENT',
     participants: '450+',
     description: 'A TEZ FFMIC Springs 2026 watch party hosted at NIT Jalandhar, bringing the competitive gaming community together to experience the action live.',
-    winners: [
-      { place: 'MVP', name: 'Kunal Saini', image: 'assets/winner-13.jpg', role: 'Demo pick' },
-      { place: 'Fan Pick', name: 'Avi Verma', image: 'assets/winner-14.jpg', role: 'Demo pick' },
-      { place: 'Highlight', name: 'Manav Sood', image: 'assets/winner-15.jpg', role: 'Demo pick' }
+    poster: 'assets/tez-ffmic-springs.jpg',
+    positions: null,
+    highlights: [
+      'events-gallery/FFMIC FF Competition /Screenshot_20260903_212330_Instagram.jpg',
+      'events-gallery/FFMIC FF Competition /Screenshot_20260903_212334_Instagram.jpg',
+      'events-gallery/FFMIC FF Competition /Screenshot_20260903_212337_Instagram.jpg'
+    ]
+  },
+  {
+    number: '06',
+    slug: 'jio-games-campus-cup',
+    title: 'JIO GAMES CAMPUS CUP',
+    subtitle: 'Valorant Campus Tournament',
+    kicker: 'VALORANT TOURNAMENT',
+    date: '24–25 November 2026',
+    venue: 'NIT Jalandhar',
+    format: 'Valorant 5v5',
+    prize: 'Campus Cup',
+    game: 'VALORANT',
+    tag: 'JIO GAMES',
+    participants: '320+',
+    description: 'The Jio Games Campus Cup brought high-octane tactical shooter action to NIT Jalandhar. Teams locked into intense Valorant clutches, tactical executions, and campus-wide competitive rivalries.',
+    poster: 'assets/jio-games-campus-cup.jpg',
+    positions: [
+      { place: '1st Place', image: 'events-gallery/Jio Games Campus Cup (Valorant)/Positions/1st.jpg' },
+      { place: '2nd Place', image: 'events-gallery/Jio Games Campus Cup (Valorant)/Positions/2nd.jpg' }
+    ],
+    highlights: [
+      'events-gallery/Jio Games Campus Cup (Valorant)/jiogames_media_prathvi.jpg',
+      'events-gallery/Jio Games Campus Cup (Valorant)/jiogames_day1_1.JPG',
+      'events-gallery/Jio Games Campus Cup (Valorant)/jiogames_day3_3.jpg',
+      'events-gallery/Jio Games Campus Cup (Valorant)/jiogames_day1_10.JPG',
+      'events-gallery/Jio Games Campus Cup (Valorant)/jiogames_day3_1.jpg',
+      'events-gallery/Jio Games Campus Cup (Valorant)/IMG_5304_SnapseedCopy.jpg',
+      'events-gallery/Jio Games Campus Cup (Valorant)/minecraft.png',
+      'events-gallery/Jio Games Campus Cup (Valorant)/IMG_5321.jpg',
+      'events-gallery/Jio Games Campus Cup (Valorant)/IMG_5307.jpg',
+      'events-gallery/Jio Games Campus Cup (Valorant)/IMG_5315.jpg',
+      'events-gallery/Jio Games Campus Cup (Valorant)/IMG_5328.jpg',
+      'events-gallery/Jio Games Campus Cup (Valorant)/jiogames_mediaa_divyanshu.JPG'
+    ]
+  },
+  {
+    number: '07',
+    slug: 'orientation-2k26',
+    title: 'ORIENTATION 2K26',
+    subtitle: 'Welcoming Freshers to the VORTEX Arena',
+    kicker: 'CAMPUS INDUCTION',
+    date: '22 August 2026',
+    venue: 'Auditorium, NIT Jalandhar',
+    format: 'Interactive Induction & Showcase',
+    prize: 'Welcome Arena',
+    game: 'COMMUNITY EVENT',
+    tag: 'ORIENTATION',
+    participants: '800+',
+    description: 'Introducing the next generation of collegiate esports athletes to VORTEX. An electrifying orientation session filled with gameplay demos, club roadmaps, and campus-wide enthusiasm.',
+    poster: 'assets/orientation-2k26.jpg',
+    positions: null,
+    highlights: [
+      'events-gallery/ORIENTATION 2k26/IMG_3913.jpg',
+      'events-gallery/ORIENTATION 2k26/IMG_3325.jpg',
+      'events-gallery/ORIENTATION 2k26/IMG_3319.jpg',
+      'events-gallery/ORIENTATION 2k26/IMG_3323.jpg',
+      'events-gallery/ORIENTATION 2k26/IMG_3914.jpg',
+      'events-gallery/ORIENTATION 2k26/IMG_3958.jpg',
+      'events-gallery/ORIENTATION 2k26/img.jpg',
+      'events-gallery/ORIENTATION 2k26/IMG_20260822_112124.jpg',
+      'events-gallery/ORIENTATION 2k26/IMG_3954.jpg',
+      'events-gallery/ORIENTATION 2k26/IMG_3931.jpg',
+      'events-gallery/ORIENTATION 2k26/IMG_3314.jpg',
+      'events-gallery/ORIENTATION 2k26/IMG_3328.jpg',
+      'events-gallery/ORIENTATION 2k26/IMG_3317.jpg',
+      'events-gallery/ORIENTATION 2k26/IMG_3302.jpg',
+      'events-gallery/ORIENTATION 2k26/IMG_3935.jpg'
     ]
   }
 ];

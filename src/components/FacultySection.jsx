@@ -4,7 +4,7 @@ export default function FacultySection() {
   return (
     <section id="faculty" className="people-section">
       <div className="section-header">
-        <h2>Faculty<span>.</span></h2>
+        <h2>Faculty</h2>
       </div>
       
       {/* Tier 1: Director */}

@@ -32,7 +32,7 @@ export default function TeamSection() {
   return (
     <section id="team" className="people-section" style={{ position: 'relative' }}>
       <div className="section-header">
-        <h2>Student Coordinators<span>.</span></h2>
+        <h2>Student Coordinators</h2>
       </div>
 
       {/* Version Selector Tabs */}
