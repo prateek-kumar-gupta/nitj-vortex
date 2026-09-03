@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 
 export default function SponsorsSection() {
   const sponsors = [
@@ -12,7 +12,7 @@ export default function SponsorsSection() {
 
   return (
     <section id="sponsors" className="sponsors-section">
-      <p className="sponsors-title">BACKED BY INDUSTRY GIANTS</p>
+      <p className="sponsors-title">PAST SPONSORS & PARTNERS</p>
       
       <div className="sponsors-marquee-container">
         <div className="sponsors-marquee">
