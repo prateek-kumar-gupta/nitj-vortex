@@ -10,27 +10,18 @@ export default function FacultySection() {
       {/* Tier 1: Director */}
       <div className="people-tier">
         <div className="person-card">
-          <div className="person-img"><img src="assets/director.jpg" alt="Prof. B K Kanaujia" /></div>
+          <div className="person-img"><img src="assets/director.jpg" alt="Prof. B K Kanaujia" loading="lazy" /></div>
           <div className="person-info">
             <h4>Prof. B K Kanaujia</h4>
             <span>DIRECTOR, NITJ</span>
-            <span style={{ color: '#fff', marginTop: '2px', fontSize: '9px' }}>PATRON</span>
           </div>
         </div>
       </div>
 
-      {/* Tier 2: DSW & DRC */}
+      {/* Tier 2: DRC */}
       <div className="people-tier">
         <div className="person-card">
-          <div className="person-img"><img src="assets/anish_sachdeva.jpg" alt="Prof. Anish Sachdeva" /></div>
-          <div className="person-info">
-            <h4>Prof. Anish Sachdeva</h4>
-            <span>DSW</span>
-            <span style={{ color: '#fff', marginTop: '2px', fontSize: '9px' }}>CHAIRPERSON</span>
-          </div>
-        </div>
-        <div className="person-card">
-          <div className="person-img"><img src="assets/rohit_mehra.jpg" alt="Prof. Rohit Mehra" /></div>
+          <div className="person-img"><img src="assets/rohit_mehra.jpg" alt="Prof. Rohit Mehra" loading="lazy" /></div>
           <div className="person-info">
             <h4>Prof. Rohit Mehra</h4>
             <span>DRC</span>
@@ -39,19 +30,19 @@ export default function FacultySection() {
         </div>
       </div>
 
-      {/* Tier 3: Coordinators */}
+      {/* Tier 3: Coordinators (Swapped) */}
       <div className="people-tier">
         <div className="person-card">
-          <div className="person-img"><img src="assets/amritpal_singh.jpg" alt="Dr. Amritpal Singh" /></div>
+          <div className="person-img"><img src="assets/urvashi.webp" alt="Dr. Urvashi" loading="lazy" /></div>
           <div className="person-info">
-            <h4>Dr. Amritpal Singh</h4>
+            <h4>Dr. Urvashi</h4>
             <span>COORDINATOR</span>
           </div>
         </div>
         <div className="person-card">
-          <div className="person-img"><img src="assets/urvashi.webp" alt="Dr. Urvashi" /></div>
+          <div className="person-img"><img src="assets/amritpal_singh.jpg" alt="Dr. Amritpal Singh" loading="lazy" /></div>
           <div className="person-info">
-            <h4>Dr. Urvashi</h4>
+            <h4>Dr. Amritpal Singh</h4>
             <span>COORDINATOR</span>
           </div>
         </div>

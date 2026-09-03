@@ -12,6 +12,7 @@ import UpcomingModal from './components/UpcomingModal';
 import EventModal from './components/EventModal';
 import Loader from './components/Loader';
 import GallerySection from './components/GallerySection';
+import AchievementsSection from './components/AchievementsSection';
 import FacultySection from './components/FacultySection';
 import TeamSection from './components/TeamSection';
 import { events } from './data/events';
@@ -46,6 +47,7 @@ export default function App() {
           onSelectEvent={(idx) => setSelectedEventIndex(idx)} 
         />
         <GallerySection />
+        <AchievementsSection />
         <AboutSection />
         <FacultySection />
         <TeamSection />

@@ -1,10 +1,10 @@
-﻿import React from 'react';
+import React from 'react';
 
 export default function TeamSection() {
   return (
     <section id="team" className="people-section">
       <div className="section-header">
-        <h2>Core Team<span>.</span></h2>
+        <h2>Student Coordinators<span>.</span></h2>
       </div>
       
       <div className="people-tier">
