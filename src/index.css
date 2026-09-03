@@ -957,3 +957,103 @@
   }
 }
 
+
+/* DESKTOP MENU VERTICAL ALIGNMENT FIX */
+@media (min-width: 821px) {
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  .nav-dropdown {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .nav-dropdown-toggle {
+    display: flex !important;
+    align-items: center !important;
+    line-height: 1 !important;
+  }
+}
+
+/* SPONSORS SECTION */
+.sponsors-section {
+  padding: 60px 0;
+  background: #060608;
+  border-top: 1px solid #1a1618;
+  border-bottom: 1px solid #1a1618;
+  overflow: hidden;
+  position: relative;
+}
+.sponsors-title {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: #666;
+  margin-bottom: 40px;
+}
+.sponsors-marquee-container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.sponsors-marquee-container::before,
+.sponsors-marquee-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+.sponsors-marquee-container::before {
+  left: 0;
+  background: linear-gradient(to right, #060608 0%, transparent 100%);
+}
+.sponsors-marquee-container::after {
+  right: 0;
+  background: linear-gradient(to left, #060608 0%, transparent 100%);
+}
+.sponsors-marquee {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  padding-left: 80px;
+  animation: marqueeScroll 25s linear infinite;
+  will-change: transform;
+}
+.sponsor-logo-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  filter: grayscale(100%) opacity(0.4);
+  transition: filter 0.3s ease;
+}
+.sponsor-logo-placeholder:hover {
+  filter: grayscale(0%) opacity(1);
+}
+.sponsor-logo-placeholder span {
+  font-family: Orbitron, sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 2px;
+}
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media(max-width: 820px) {
+  .sponsors-marquee {
+    gap: 50px;
+    padding-left: 50px;
+  }
+  .sponsor-logo-placeholder span {
+    font-size: 22px;
+  }
+}

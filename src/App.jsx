@@ -11,6 +11,7 @@ import UpcomingToast from './components/UpcomingToast';
 import UpcomingModal from './components/UpcomingModal';
 import EventModal from './components/EventModal';
 import Loader from './components/Loader';
+import SponsorsSection from './components/SponsorsSection';
 import GallerySection from './components/GallerySection';
 import AchievementsSection from './components/AchievementsSection';
 import FacultySection from './components/FacultySection';
@@ -41,6 +42,7 @@ export default function App() {
 
       <main className={isAnyModalOpen ? 'modal-open' : ''}>
         <Hero onOpenUpcoming={() => setIsUpcomingOpen(true)} />
+        <SponsorsSection />
         <UpcomingSection onOpenUpcoming={() => setIsUpcomingOpen(true)} />
         <EventsArchive 
           events={events} 
