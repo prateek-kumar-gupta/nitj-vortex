@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+﻿import React, { useRef, useState } from 'react';
 
 export default function EventsArchive({ events, onSelectEvent }) {
   const trackRef = useRef(null);
@@ -62,7 +62,7 @@ export default function EventsArchive({ events, onSelectEvent }) {
           aria-label="Scroll events left"
           onClick={() => scroll('left')}
         >
-          ‹
+          ←
         </button>
         
         <div className="events-track" ref={trackRef} onScroll={handleScroll}>
@@ -108,7 +108,7 @@ export default function EventsArchive({ events, onSelectEvent }) {
           aria-label="Scroll events right"
           onClick={() => scroll('right')}
         >
-          ›
+          →
         </button>
       </div>
 
