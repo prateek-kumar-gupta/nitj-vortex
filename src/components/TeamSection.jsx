@@ -8,7 +8,7 @@ export default function TeamSection() {
       label: "GEN 1.0",
       year: "CLASS OF '26",
       members: [
-        { name: "Kajal Singh", role: "VICE PRESIDENT", img: "assets/vortex-logo.jpg" },
+        { name: "Kajal Singh", role: "VICE PRESIDENT", img: "assets/kajal.jpg" },
         { name: "Nischay Verma", role: "PRESIDENT", img: "assets/vortex-logo.jpg" },
         { name: "Mankiran Kaur", role: "VICE PRESIDENT", img: "assets/mankiran.jpg" }
       ]
