@@ -44,7 +44,7 @@ export default function Footer() {
           </svg>
         </a>
         <a 
-          href="https://www.bing.com/ck/a?!&&p=ef201711924f81a33f2918da74bc52e2c11c261464e32d25eeb961acbfd68fc8JmltdHM9MTc4ODMwNzIwMA&ptn=3&ver=2&hsh=4&fclid=33574a4a-7301-604a-2bb3-5edb72f3619b&u=a1L21hcHM_Jm1lcGk9MH5-RW1iZWRkZWR-QWRkcmVzc19MaW5rJnR5PTE4JnE9RHIlMjBCJTIwUiUyMEFtYmVka2FyJTIwTmF0aW9uYWwlMjBJbnN0aXR1dGUlMjBvZiUyMFRlY2hub2xvZ3klMjBKYWxhbmRoYXImc3M9eXBpZC5ZTkE0MTFEODZCMzhDRjU4QyZwcG9pcz0zMS4zOTU4NzIxMTYwODg4NjdfNzUuNTM1ODM1MjY2MTEzMjhfRHIlMjBCJTIwUiUyMEFtYmVka2FyJTIwTmF0aW9uYWwlMjBJbnN0aXR1dGUlMjBvZiUyMFRlY2hub2xvZ3klMjBKYWxhbmRoYXJfWU5BNDExRDg2QjM4Q0Y1OEN-JmNwPTMxLjM5NTg3Mn43NS41MzU4MzUmdj0yJnNWPTEmRk9STT1NUFNSUEw" 
+          href="https://maps.app.goo.gl/MW8qHyaDYMjCUQ1GA" 
           target="_blank" 
           rel="noopener noreferrer"
           aria-label="Location"
