@@ -851,3 +851,43 @@
     max-width: 500px;
   }
 }
+
+/* MOBILE FIXES */
+@media (max-width: 820px) {
+  /* Fix nav dropdown alignment */
+  .nav-dropdown {
+    align-items: flex-start !important;
+  }
+  .nav-dropdown-menu {
+    align-items: flex-start !important;
+    padding-left: 15px !important;
+  }
+  .nav-dropdown-menu a {
+    text-align: left !important;
+  }
+  
+  /* Fix hero section skull overlap */
+  .hero {
+    position: relative;
+  }
+  .hero-copy {
+    position: relative;
+    z-index: 5 !important;
+  }
+  .hero-mark {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 140% !important;
+    max-width: 600px !important;
+    opacity: 0.1 !important;
+    z-index: 1 !important;
+    pointer-events: none !important;
+  }
+  
+  /* Fix header font size scaling so DOMINATE doesn't get clipped on tiny screens */
+  .hero-title-anim {
+    font-size: clamp(38px, 12vw, 90px) !important;
+  }
+}
