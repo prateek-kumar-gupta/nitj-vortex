@@ -9,7 +9,7 @@ export default function ContactSection() {
       </div>
       <div className="contact-box">
         <p>
-          Recruit your squad, secure your slot, and prepare for battle. Follow our comms network for drop zones, tournament intel, and campus leaderboards.
+          Gear up, assemble your squad, and prepare to dominate. Stay locked to our official comms for the latest tournament intel, upcoming drop zones, and campus leaderboards.
         </p>
         <p style={{ color: '#fff', fontSize: '18px', fontWeight: '800', margin: '20px 0', letterSpacing: '1px' }}>
           📞 +91 7009464206

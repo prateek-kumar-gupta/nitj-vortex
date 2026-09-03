@@ -22,7 +22,7 @@ export default function Footer() {
           </svg>
         </a>
         <a 
-          href="#" 
+          href="https://whatsapp.com/channel/0029VbDnuz605MUZwFtNaX1T" 
           target="_blank" 
           rel="noopener noreferrer"
           aria-label="WhatsApp"
@@ -32,7 +32,7 @@ export default function Footer() {
           </svg>
         </a>
         <a 
-          href="#" 
+          href="http://www.linkedin.com/in/vortexnitj" 
           target="_blank" 
           rel="noopener noreferrer"
           aria-label="LinkedIn"

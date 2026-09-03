@@ -25,7 +25,6 @@ export default function FacultySection() {
           <div className="person-info">
             <h4>Prof. Rohit Mehra</h4>
             <span>DRC</span>
-            <span style={{ color: '#fff', marginTop: '2px', fontSize: '9px' }}>CHAIRPERSON</span>
           </div>
         </div>
       </div>
