@@ -10,7 +10,7 @@ export default function TeamSection() {
       members: [
         { name: "Kajal Singh", role: "VICE PRESIDENT", img: "assets/vortex-logo.jpg" },
         { name: "Nischay Verma", role: "PRESIDENT", img: "assets/vortex-logo.jpg" },
-        { name: "Mankiran Kaur", role: "VICE PRESIDENT", img: "assets/vortex-logo.jpg" }
+        { name: "Mankiran Kaur", role: "VICE PRESIDENT", img: "assets/mankiran.jpg" }
       ]
     },
     v2: {
