@@ -74,7 +74,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="hero">
+    <section id="home" className="hero">
       <div className="hero-copy">
         <p className="eyebrow animate-slide-up" style={{ animationDelay: '0.1s' }}>NIT JALANDHAR • ESPORTS CLUB</p>
         <h1 className="hero-title-anim">
