@@ -525,7 +525,7 @@
   opacity: 0;
   transition: opacity 0.5s ease;
 }
-.interactive-logo:hover .logo-ring {
+.interactive-logo .logo-ring {
   opacity: 1;
 }
 
@@ -593,7 +593,7 @@
   border-top-color: var(--red);
   animation: spinRing 8s linear infinite reverse;
 }
-.interactive-logo:hover .logo-ring {
+.interactive-logo .logo-ring {
   opacity: 1;
 }
 
@@ -610,7 +610,7 @@
   pointer-events: none;
   transition: opacity 0.3s;
 }
-.interactive-logo:hover .scanner {
+.interactive-logo .scanner {
   opacity: 1;
   animation: scanEffect 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
@@ -626,7 +626,7 @@
   transition: opacity 0.3s;
   mix-blend-mode: color-dodge;
 }
-.interactive-logo:hover .hologram-effect {
+.interactive-logo .hologram-effect {
   opacity: 1;
   animation: hologramFlicker 0.15s infinite;
 }
