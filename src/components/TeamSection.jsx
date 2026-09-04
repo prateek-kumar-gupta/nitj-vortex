@@ -9,7 +9,7 @@ export default function TeamSection() {
       year: "CLASS OF '26",
       members: [
         { name: "Mankiran Kaur", role: "VICE PRESIDENT", img: "/assets/mankiran.jpg" },
-        { name: "Nischay Verma", role: "PRESIDENT", img: "/assets/vortex-logo.jpg" },
+        { name: "Nischay Verma", role: "PRESIDENT", img: "/assets/nischay_verma.jpg" },
         { name: "Kajal Singh", role: "VICE PRESIDENT", img: "/assets/kajal.jpg" }
       ]
     },
