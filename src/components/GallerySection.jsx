@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+﻿import React, { useState, useEffect, useRef, useCallback } from 'react';
 
 const animPhotos = [
   { id: 1, src: '/anim-gallery/IMG_7789.jpg' },
@@ -16,8 +16,10 @@ const animPhotos = [
 export default function GallerySection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  const [direction, setDirection] = useState('next'); // 'next' | 'prev'
+  const [direction, setDirection] = useState('next');
   const touchStartX = useRef(null);
+  const heroRef = useRef(null);
+  const glareRef = useRef(null);
 
   const total = animPhotos.length;
 
@@ -38,7 +40,7 @@ export default function GallerySection() {
     return () => clearInterval(timer);
   }, [isPaused, nextSlide]);
 
-  // Preload adjacent images so transitions are instant
+  // Preload adjacent images
   useEffect(() => {
     const nextIdx = (currentIndex + 1) % total;
     const prevIdx = (currentIndex - 1 + total) % total;
@@ -69,6 +71,35 @@ export default function GallerySection() {
     if (diff > 45) nextSlide();
     else if (diff < -45) prevSlide();
     touchStartX.current = null;
+  };
+
+  // Crazy 3D Mouse Tilt Effect
+  const handleMouseMove = (e) => {
+    if (!heroRef.current) return;
+    const rect = heroRef.current.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    
+    // Intense 3D rotation
+    const rotateX = ((y - centerY) / centerY) * -15;
+    const rotateY = ((x - centerX) / centerX) * 15;
+    
+    heroRef.current.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`;
+    
+    if (glareRef.current) {
+      const percentageX = (x / rect.width) * 100;
+      const percentageY = (y / rect.height) * 100;
+      glareRef.current.style.background = `radial-gradient(circle at ${percentageX}% ${percentageY}%, rgba(255, 45, 38, 0.4) 0%, transparent 60%)`;
+      glareRef.current.style.opacity = 1;
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (!heroRef.current) return;
+    heroRef.current.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
+    if (glareRef.current) glareRef.current.style.opacity = 0;
   };
 
   // Helper to get circular relative indices
@@ -116,17 +147,23 @@ export default function GallerySection() {
             />
           </div>
 
-          {/* Active Center Hero Card */}
+          {/* Active Center Hero Card with Crazy 3D Tilt */}
           <div 
             className={`hero-showcase-frame slide-${direction}`}
             key={currentIndex}
+            ref={heroRef}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            style={{ transition: 'transform 0.1s ease-out', willChange: 'transform', transformStyle: 'preserve-3d' }}
           >
-            <div className="hero-img-shell">
+            <div ref={glareRef} style={{ position: 'absolute', inset: 0, zIndex: 10, pointerEvents: 'none', opacity: 0, transition: 'opacity 0.3s', mixBlendMode: 'screen' }}></div>
+            <div className="hero-img-shell" style={{ transformStyle: 'preserve-3d' }}>
               <img 
                 src={currentPhoto.src} 
                 alt={`VORTEX capture ${currentIndex + 1}`} 
                 className="hero-full-img"
                 loading="eager"
+                style={{ transform: 'translateZ(20px)' }}
               />
               {/* Tech Corner Brackets */}
               <div className="hero-bracket top-left"></div>

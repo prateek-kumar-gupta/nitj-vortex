@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+﻿import React, { useRef, useState, useEffect } from 'react';
 
 export default function AchievementsSection() {
   const achievements = [
@@ -6,6 +6,12 @@ export default function AchievementsSection() {
       title: "Inter-NIT Finalists",
       desc: "Competed fiercely and secured a top spot in the national inter-college esports tournament.",
       stat: "Grand Finalists"
+    },
+    {
+      title: "Game Mania at GNA",
+      desc: "Represented NIT Jalandhar and dominated the arena at GNA University, bringing home top honors and competitive glory.",
+      stat: "Champions",
+      image: "/assets/game-mania-gna.jpg"
     },
     {
       title: "Campus Record",
@@ -16,12 +22,6 @@ export default function AchievementsSection() {
       title: "Esports Community",
       desc: "Fastest growing technical club on campus with a dedicated gamer base.",
       stat: "Top 3"
-    },
-    {
-      title: "Game Mania at GNA",
-      desc: "Represented NIT Jalandhar and dominated the arena at GNA University, bringing home top honors and competitive glory.",
-      stat: "Champions",
-      image: "/assets/game-mania-gna.jpg"
     }
   ];
 

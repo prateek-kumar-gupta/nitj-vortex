@@ -86,9 +86,6 @@ export default function EventsArchive({ events, onSelectEvent }) {
               ></div>
               <div className="card-shade"></div>
               <div className="card-top">
-                <span className="card-number">
-                  {e.number} / {String(events.length).padStart(2, '0')}
-                </span>
                 <span className="card-arrow">↗</span>
               </div>
               <div className="card-content">
