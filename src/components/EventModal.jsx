@@ -158,7 +158,17 @@ export default function EventModal({ eventIndex, events, onClose, onChangeEvent 
                     title="Click to view full photo"
                   >
                     <div className="winner-img-wrap">
-                      <img src={w.image} alt={w.place} loading="lazy" />
+                      <img 
+                        src={w.image} 
+                        alt={w.place} 
+                        loading="lazy" 
+                        onError={(e) => {
+                          if (!e.target.dataset.retried) {
+                            e.target.dataset.retried = 'true';
+                            e.target.src = w.image.startsWith('/') ? w.image : `/${w.image}`;
+                          }
+                        }}
+                      />
                     </div>
                     <span className="winner-pos-badge">{w.place}</span>
                   </div>
@@ -238,6 +248,12 @@ export default function EventModal({ eventIndex, events, onClose, onChangeEvent 
                 src={expandedWinner.image} 
                 alt={expandedWinner.place} 
                 className="winner-lightbox-img" 
+                onError={(e) => {
+                  if (!e.target.dataset.retried) {
+                    e.target.dataset.retried = 'true';
+                    e.target.src = expandedWinner.image.startsWith('/') ? expandedWinner.image : `/${expandedWinner.image}`;
+                  }
+                }}
               />
               <div className="winner-lightbox-tag">
                 {expandedWinner.place}
