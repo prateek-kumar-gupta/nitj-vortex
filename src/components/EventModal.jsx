@@ -105,7 +105,7 @@ export default function EventModal({ eventIndex, events, onClose, onChangeEvent 
 
         <div className="modal-hero">
           <img 
-            src={currentEvent.poster || `assets/${currentEvent.slug}.jpg`} 
+            src={currentEvent.poster || `/assets/${currentEvent.slug}.jpg`} 
             alt={`${currentEvent.title} event cover`} 
           />
           <div className="hero-overlay"></div>

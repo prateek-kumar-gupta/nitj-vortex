@@ -21,7 +21,7 @@ export default function AchievementsSection() {
       title: "Game Mania at GNA",
       desc: "Represented NIT Jalandhar and dominated the arena at GNA University, bringing home top honors and competitive glory.",
       stat: "Champions",
-      image: "assets/game-mania-gna.jpg"
+      image: "/assets/game-mania-gna.jpg"
     }
   ];
 

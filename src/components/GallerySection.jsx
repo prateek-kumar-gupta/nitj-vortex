@@ -1,16 +1,16 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 
 const animPhotos = [
-  { id: 1, src: 'anim-gallery/IMG_7789.jpg' },
-  { id: 2, src: 'anim-gallery/IMG_1721.jpg' },
-  { id: 3, src: 'anim-gallery/jiogames_day3_3.jpg' },
-  { id: 4, src: 'anim-gallery/IMG_1418.jpg' },
-  { id: 5, src: 'anim-gallery/IMG-20260828-WA0034.jpeg' },
-  { id: 6, src: 'anim-gallery/IMG_3319.jpg' },
-  { id: 7, src: 'anim-gallery/IMG_5304_SnapseedCopy.jpg' },
-  { id: 8, src: 'anim-gallery/b8fb6ef2-2c75-4748-8f72-a5ea4e7587de.jpg' },
-  { id: 9, src: 'anim-gallery/jiogames_mediaa_divyanshu.JPG' },
-  { id: 10, src: 'anim-gallery/img.jpg' }
+  { id: 1, src: '/anim-gallery/IMG_7789.jpg' },
+  { id: 2, src: '/anim-gallery/IMG_1721.jpg' },
+  { id: 3, src: '/anim-gallery/jiogames_day3_3.jpg' },
+  { id: 4, src: '/anim-gallery/IMG_1418.jpg' },
+  { id: 5, src: '/anim-gallery/IMG-20260828-WA0034.jpeg' },
+  { id: 6, src: '/anim-gallery/IMG_3319.jpg' },
+  { id: 7, src: '/anim-gallery/IMG_5304_SnapseedCopy.jpg' },
+  { id: 8, src: '/anim-gallery/b8fb6ef2-2c75-4748-8f72-a5ea4e7587de.jpg' },
+  { id: 9, src: '/anim-gallery/jiogames_mediaa_divyanshu.JPG' },
+  { id: 10, src: '/anim-gallery/img.jpg' }
 ];
 
 export default function GallerySection() {
@@ -31,12 +31,22 @@ export default function GallerySection() {
     setCurrentIndex((prev) => (prev - 1 + total) % total);
   }, [total]);
 
-  // Autoplay rotation every 3.6 seconds
+  // Autoplay rotation every 4.2 seconds
   useEffect(() => {
     if (isPaused) return;
-    const timer = setInterval(nextSlide, 3600);
+    const timer = setInterval(nextSlide, 4200);
     return () => clearInterval(timer);
   }, [isPaused, nextSlide]);
+
+  // Preload adjacent images so transitions are instant
+  useEffect(() => {
+    const nextIdx = (currentIndex + 1) % total;
+    const prevIdx = (currentIndex - 1 + total) % total;
+    const img1 = new Image();
+    img1.src = animPhotos[nextIdx].src;
+    const img2 = new Image();
+    img2.src = animPhotos[prevIdx].src;
+  }, [currentIndex, total]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -93,7 +103,7 @@ export default function GallerySection() {
 
         {/* 3D Curved Gallery Horizon */}
         <div className="cinematic-stage">
-          {/* Left Preview Card (3D angled in background) */}
+          {/* Left Preview Card */}
           <div 
             className="horizon-card horizon-prev"
             onClick={prevSlide}
@@ -102,11 +112,11 @@ export default function GallerySection() {
             <img 
               src={prevPhoto.src} 
               alt="Previous capture" 
-              loading="lazy" 
+              loading="eager" 
             />
           </div>
 
-          {/* Active Center Hero Card (100% full uncropped image) */}
+          {/* Active Center Hero Card */}
           <div 
             className={`hero-showcase-frame slide-${direction}`}
             key={currentIndex}
@@ -116,6 +126,7 @@ export default function GallerySection() {
                 src={currentPhoto.src} 
                 alt={`VORTEX capture ${currentIndex + 1}`} 
                 className="hero-full-img"
+                loading="eager"
               />
               {/* Tech Corner Brackets */}
               <div className="hero-bracket top-left"></div>
@@ -125,7 +136,7 @@ export default function GallerySection() {
             </div>
           </div>
 
-          {/* Right Preview Card (3D angled in background) */}
+          {/* Right Preview Card */}
           <div 
             className="horizon-card horizon-next"
             onClick={nextSlide}
@@ -134,7 +145,7 @@ export default function GallerySection() {
             <img 
               src={nextPhoto.src} 
               alt="Next capture" 
-              loading="lazy" 
+              loading="eager" 
             />
           </div>
         </div>

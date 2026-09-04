@@ -8,23 +8,23 @@ export default function TeamSection() {
       label: "GEN 1.0",
       year: "CLASS OF '26",
       members: [
-        { name: "Mankiran Kaur", role: "VICE PRESIDENT", img: "assets/mankiran.jpg" },
-        { name: "Nischay Verma", role: "PRESIDENT", img: "assets/vortex-logo.jpg" },
-        { name: "Kajal Singh", role: "VICE PRESIDENT", img: "assets/kajal.jpg" }
+        { name: "Mankiran Kaur", role: "VICE PRESIDENT", img: "/assets/mankiran.jpg" },
+        { name: "Nischay Verma", role: "PRESIDENT", img: "/assets/vortex-logo.jpg" },
+        { name: "Kajal Singh", role: "VICE PRESIDENT", img: "/assets/kajal.jpg" }
       ]
     },
     v2: {
       label: "GEN 2.0",
       year: "CLASS OF '27",
       members: [
-        { name: "Incoming Roster", role: "TO BE ANNOUNCED", img: "assets/vortex-logo.jpg" }
+        { name: "Incoming Roster", role: "TO BE ANNOUNCED", img: "/assets/vortex-logo.jpg" }
       ]
     },
     v3: {
       label: "GEN 3.0",
       year: "CLASS OF '28",
       members: [
-        { name: "Incoming Roster", role: "TO BE ANNOUNCED", img: "assets/vortex-logo.jpg" }
+        { name: "Incoming Roster", role: "TO BE ANNOUNCED", img: "/assets/vortex-logo.jpg" }
       ]
     }
   };

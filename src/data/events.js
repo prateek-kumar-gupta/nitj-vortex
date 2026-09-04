@@ -13,21 +13,21 @@ export const events = [
     tag: 'MULTI-GAME',
     participants: '1200+',
     description: 'Organized as part of Utkansh, the biggest college tech fest, ARENA-X set the campus ablaze. The battlefield was set, the energy was unreal, and the competition brought gamers together for an intense VORTEX experience across multiple titles.',
-    poster: 'assets/arena-x.jpg',
+    poster: '/assets/arena-x.jpg',
     positions: [
-      { place: '1st Place', image: 'events-gallery/ARENA-X/Positions/1st.jpg' },
-      { place: '2nd Place', image: 'events-gallery/ARENA-X/Positions/2nd.jpg' },
-      { place: '3rd Place', image: 'events-gallery/ARENA-X/Positions/3rd.jpg' }
+      { place: '1st Place', image: '/events-gallery/ARENA-X/Positions/1st.jpg' },
+      { place: '2nd Place', image: '/events-gallery/ARENA-X/Positions/2nd.jpg' },
+      { place: '3rd Place', image: '/events-gallery/ARENA-X/Positions/3rd.jpg' }
     ],
     highlights: [
-      'events-gallery/ARENA-X/IMG_7777.jpg',
-      'events-gallery/ARENA-X/IMG_7778.jpg',
-      'events-gallery/ARENA-X/IMG_7779.jpg',
-      'events-gallery/ARENA-X/IMG_7780.jpg',
-      'events-gallery/ARENA-X/IMG_7781.jpg',
-      'events-gallery/ARENA-X/IMG_7782.jpg',
-      'events-gallery/ARENA-X/IMG_7786.jpg',
-      'events-gallery/ARENA-X/IMG_7789.jpg'
+      '/events-gallery/ARENA-X/IMG_7777.jpg',
+      '/events-gallery/ARENA-X/IMG_7778.jpg',
+      '/events-gallery/ARENA-X/IMG_7779.jpg',
+      '/events-gallery/ARENA-X/IMG_7780.jpg',
+      '/events-gallery/ARENA-X/IMG_7781.jpg',
+      '/events-gallery/ARENA-X/IMG_7782.jpg',
+      '/events-gallery/ARENA-X/IMG_7786.jpg',
+      '/events-gallery/ARENA-X/IMG_7789.jpg'
     ]
   },
   {
@@ -44,15 +44,15 @@ export const events = [
     tag: 'FREE CAMPUS EVENT',
     participants: '420+',
     description: 'Kreo Aero Klash was an unconventional and wildly popular physical gaming challenge held at the MBH Ground. Moving away from the screens, hundreds of students tested their precision and aerodynamics by constructing and launching paper gliders. The atmosphere was charged with high-energy music, roaring crowds, and fierce competition.',
-    poster: 'assets/kreo-aero-klash.jpg',
+    poster: '/assets/kreo-aero-klash.jpg',
     positions: null,
     highlights: [
-      'events-gallery/AERO KLASH/IMG_0298.jpg',
-      'events-gallery/AERO KLASH/IMG_0316.jpg',
-      'events-gallery/AERO KLASH/IMG_0330.jpg',
-      'events-gallery/AERO KLASH/IMG_1183.jpg',
-      'events-gallery/AERO KLASH/IMG_1192.jpg',
-      'events-gallery/AERO KLASH/IMG_1216.jpg'
+      '/events-gallery/AERO KLASH/IMG_0298.jpg',
+      '/events-gallery/AERO KLASH/IMG_0316.jpg',
+      '/events-gallery/AERO KLASH/IMG_0330.jpg',
+      '/events-gallery/AERO KLASH/IMG_1183.jpg',
+      '/events-gallery/AERO KLASH/IMG_1192.jpg',
+      '/events-gallery/AERO KLASH/IMG_1216.jpg'
     ]
   },
   {
@@ -69,28 +69,28 @@ export const events = [
     tag: 'MONSTER ENERGY',
     participants: '500+',
     description: 'Monster Campus Unleashed brought an electrifying BGMI-focused gaming fest to NIT Jalandhar, proudly sponsored by Monster Energy with a ₹10,000 prize pool and a roaring campus esports atmosphere.',
-    poster: 'assets/monster-campus-unleashed.jpg',
+    poster: '/assets/monster-campus-unleashed.jpg',
     positions: [
-      { place: 'Winner', image: 'events-gallery/MONSTER/Positions/Winner.jpg' },
-      { place: 'Winner', image: 'events-gallery/MONSTER/Positions/Winner2.jpg' }
+      { place: 'Winner', image: '/events-gallery/MONSTER/Positions/Winner.jpg' },
+      { place: 'Winner', image: '/events-gallery/MONSTER/Positions/Winner2.jpg' }
     ],
     highlights: [
-      'events-gallery/MONSTER/IMG_1713.jpg',
-      'events-gallery/MONSTER/IMG_1721.jpg',
-      'events-gallery/MONSTER/IMG_1740.jpg',
-      'events-gallery/MONSTER/IMG_1752.jpg',
-      'events-gallery/MONSTER/IMG_1637.jpg',
-      'events-gallery/MONSTER/IMG_1661.jpg',
-      'events-gallery/MONSTER/IMG_2679.jpg',
-      'events-gallery/MONSTER/IMG-20260828-WA0034.jpeg',
-      'events-gallery/MONSTER/IMG-20260828-WA0038.jpg',
-      'events-gallery/MONSTER/IMG-20260828-WA0108.jpg',
-      'events-gallery/MONSTER/IMG_20260828_142842.jpg',
-      'events-gallery/MONSTER/IMG_20260828_155850.jpg',
-      'events-gallery/MONSTER/IMG_20260828_163042.jpg',
-      'events-gallery/MONSTER/IMG_20260829_143229.jpg',
-      'events-gallery/MONSTER/IMG_20260829_151322.jpg',
-      'events-gallery/MONSTER/IMG_20260829_151401.jpg'
+      '/events-gallery/MONSTER/IMG_1713.jpg',
+      '/events-gallery/MONSTER/IMG_1721.jpg',
+      '/events-gallery/MONSTER/IMG_1740.jpg',
+      '/events-gallery/MONSTER/IMG_1752.jpg',
+      '/events-gallery/MONSTER/IMG_1637.jpg',
+      '/events-gallery/MONSTER/IMG_1661.jpg',
+      '/events-gallery/MONSTER/IMG_2679.jpg',
+      '/events-gallery/MONSTER/IMG-20260828-WA0034.jpeg',
+      '/events-gallery/MONSTER/IMG-20260828-WA0038.jpg',
+      '/events-gallery/MONSTER/IMG-20260828-WA0108.jpg',
+      '/events-gallery/MONSTER/IMG_20260828_142842.jpg',
+      '/events-gallery/MONSTER/IMG_20260828_155850.jpg',
+      '/events-gallery/MONSTER/IMG_20260828_163042.jpg',
+      '/events-gallery/MONSTER/IMG_20260829_143229.jpg',
+      '/events-gallery/MONSTER/IMG_20260829_151322.jpg',
+      '/events-gallery/MONSTER/IMG_20260829_151401.jpg'
     ]
   },
   {
@@ -107,15 +107,15 @@ export const events = [
     tag: 'SOLO MODE',
     participants: '400+',
     description: 'One player. One chance. One winner. BGMI Showdown was a solo competition built around survival, skill and the final player standing.',
-    poster: 'assets/bgmi-showdown.jpg',
+    poster: '/assets/bgmi-showdown.jpg',
     positions: null,
     highlights: [
-      'events-gallery/BGMI SHOWDOWN/IMG_1347.jpg',
-      'events-gallery/BGMI SHOWDOWN/IMG_1348.jpg',
-      'events-gallery/BGMI SHOWDOWN/IMG_1381.jpg',
-      'events-gallery/BGMI SHOWDOWN/IMG_1404.jpg',
-      'events-gallery/BGMI SHOWDOWN/IMG_1416.jpg',
-      'events-gallery/BGMI SHOWDOWN/IMG_1418.jpg'
+      '/events-gallery/BGMI SHOWDOWN/IMG_1347.jpg',
+      '/events-gallery/BGMI SHOWDOWN/IMG_1348.jpg',
+      '/events-gallery/BGMI SHOWDOWN/IMG_1381.jpg',
+      '/events-gallery/BGMI SHOWDOWN/IMG_1404.jpg',
+      '/events-gallery/BGMI SHOWDOWN/IMG_1416.jpg',
+      '/events-gallery/BGMI SHOWDOWN/IMG_1418.jpg'
     ]
   },
   {
@@ -132,12 +132,12 @@ export const events = [
     tag: 'FFMIC EVENT',
     participants: '450+',
     description: 'A TEZ FFMIC Springs 2026 watch party hosted at NIT Jalandhar, bringing the competitive gaming community together to experience the action live.',
-    poster: 'assets/tez-ffmic-springs.jpg',
+    poster: '/assets/tez-ffmic-springs.jpg',
     positions: null,
     highlights: [
-      'events-gallery/FFMIC FF Competition /Screenshot_20260903_212330_Instagram.jpg',
-      'events-gallery/FFMIC FF Competition /Screenshot_20260903_212334_Instagram.jpg',
-      'events-gallery/FFMIC FF Competition /Screenshot_20260903_212337_Instagram.jpg'
+      '/events-gallery/FFMIC FF Competition /Screenshot_20260903_212330_Instagram.jpg',
+      '/events-gallery/FFMIC FF Competition /Screenshot_20260903_212334_Instagram.jpg',
+      '/events-gallery/FFMIC FF Competition /Screenshot_20260903_212337_Instagram.jpg'
     ]
   },
   {
@@ -154,24 +154,24 @@ export const events = [
     tag: 'JIO GAMES',
     participants: '320+',
     description: 'The Jio Games Campus Cup brought high-octane tactical shooter action to NIT Jalandhar. Teams locked into intense Valorant clutches, tactical executions, and campus-wide competitive rivalries.',
-    poster: 'assets/jio-games-campus-cup.jpg',
+    poster: '/assets/jio-games-campus-cup.jpg',
     positions: [
-      { place: '1st Place', image: 'events-gallery/Jio Games Campus Cup (Valorant)/Positions/1st.jpg' },
-      { place: '2nd Place', image: 'events-gallery/Jio Games Campus Cup (Valorant)/Positions/2nd.jpg' }
+      { place: '1st Place', image: '/events-gallery/Jio Games Campus Cup (Valorant)/Positions/1st.jpg' },
+      { place: '2nd Place', image: '/events-gallery/Jio Games Campus Cup (Valorant)/Positions/2nd.jpg' }
     ],
     highlights: [
-      'events-gallery/Jio Games Campus Cup (Valorant)/jiogames_media_prathvi.jpg',
-      'events-gallery/Jio Games Campus Cup (Valorant)/jiogames_day1_1.JPG',
-      'events-gallery/Jio Games Campus Cup (Valorant)/jiogames_day3_3.jpg',
-      'events-gallery/Jio Games Campus Cup (Valorant)/jiogames_day1_10.JPG',
-      'events-gallery/Jio Games Campus Cup (Valorant)/jiogames_day3_1.jpg',
-      'events-gallery/Jio Games Campus Cup (Valorant)/IMG_5304_SnapseedCopy.jpg',
-      'events-gallery/Jio Games Campus Cup (Valorant)/minecraft.png',
-      'events-gallery/Jio Games Campus Cup (Valorant)/IMG_5321.jpg',
-      'events-gallery/Jio Games Campus Cup (Valorant)/IMG_5307.jpg',
-      'events-gallery/Jio Games Campus Cup (Valorant)/IMG_5315.jpg',
-      'events-gallery/Jio Games Campus Cup (Valorant)/IMG_5328.jpg',
-      'events-gallery/Jio Games Campus Cup (Valorant)/jiogames_mediaa_divyanshu.JPG'
+      '/events-gallery/Jio Games Campus Cup (Valorant)/jiogames_media_prathvi.jpg',
+      '/events-gallery/Jio Games Campus Cup (Valorant)/jiogames_day1_1.JPG',
+      '/events-gallery/Jio Games Campus Cup (Valorant)/jiogames_day3_3.jpg',
+      '/events-gallery/Jio Games Campus Cup (Valorant)/jiogames_day1_10.JPG',
+      '/events-gallery/Jio Games Campus Cup (Valorant)/jiogames_day3_1.jpg',
+      '/events-gallery/Jio Games Campus Cup (Valorant)/IMG_5304_SnapseedCopy.jpg',
+      '/events-gallery/Jio Games Campus Cup (Valorant)/minecraft.png',
+      '/events-gallery/Jio Games Campus Cup (Valorant)/IMG_5321.jpg',
+      '/events-gallery/Jio Games Campus Cup (Valorant)/IMG_5307.jpg',
+      '/events-gallery/Jio Games Campus Cup (Valorant)/IMG_5315.jpg',
+      '/events-gallery/Jio Games Campus Cup (Valorant)/IMG_5328.jpg',
+      '/events-gallery/Jio Games Campus Cup (Valorant)/jiogames_mediaa_divyanshu.JPG'
     ]
   },
   {
@@ -188,24 +188,24 @@ export const events = [
     tag: 'ORIENTATION',
     participants: '800+',
     description: 'Introducing the next generation of collegiate esports athletes to VORTEX. An electrifying orientation session filled with gameplay demos, club roadmaps, and campus-wide enthusiasm.',
-    poster: 'assets/orientation-2k26.jpg',
+    poster: '/assets/orientation-2k26.jpg',
     positions: null,
     highlights: [
-      'events-gallery/ORIENTATION 2k26/IMG_3913.jpg',
-      'events-gallery/ORIENTATION 2k26/IMG_3325.jpg',
-      'events-gallery/ORIENTATION 2k26/IMG_3319.jpg',
-      'events-gallery/ORIENTATION 2k26/IMG_3323.jpg',
-      'events-gallery/ORIENTATION 2k26/IMG_3914.jpg',
-      'events-gallery/ORIENTATION 2k26/IMG_3958.jpg',
-      'events-gallery/ORIENTATION 2k26/img.jpg',
-      'events-gallery/ORIENTATION 2k26/IMG_20260822_112124.jpg',
-      'events-gallery/ORIENTATION 2k26/IMG_3954.jpg',
-      'events-gallery/ORIENTATION 2k26/IMG_3931.jpg',
-      'events-gallery/ORIENTATION 2k26/IMG_3314.jpg',
-      'events-gallery/ORIENTATION 2k26/IMG_3328.jpg',
-      'events-gallery/ORIENTATION 2k26/IMG_3317.jpg',
-      'events-gallery/ORIENTATION 2k26/IMG_3302.jpg',
-      'events-gallery/ORIENTATION 2k26/IMG_3935.jpg'
+      '/events-gallery/ORIENTATION 2k26/IMG_3913.jpg',
+      '/events-gallery/ORIENTATION 2k26/IMG_3325.jpg',
+      '/events-gallery/ORIENTATION 2k26/IMG_3319.jpg',
+      '/events-gallery/ORIENTATION 2k26/IMG_3323.jpg',
+      '/events-gallery/ORIENTATION 2k26/IMG_3914.jpg',
+      '/events-gallery/ORIENTATION 2k26/IMG_3958.jpg',
+      '/events-gallery/ORIENTATION 2k26/img.jpg',
+      '/events-gallery/ORIENTATION 2k26/IMG_20260822_112124.jpg',
+      '/events-gallery/ORIENTATION 2k26/IMG_3954.jpg',
+      '/events-gallery/ORIENTATION 2k26/IMG_3931.jpg',
+      '/events-gallery/ORIENTATION 2k26/IMG_3314.jpg',
+      '/events-gallery/ORIENTATION 2k26/IMG_3328.jpg',
+      '/events-gallery/ORIENTATION 2k26/IMG_3317.jpg',
+      '/events-gallery/ORIENTATION 2k26/IMG_3302.jpg',
+      '/events-gallery/ORIENTATION 2k26/IMG_3935.jpg'
     ]
   }
 ];

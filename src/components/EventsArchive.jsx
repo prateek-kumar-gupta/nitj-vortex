@@ -82,7 +82,7 @@ export default function EventsArchive({ events, onSelectEvent }) {
             >
               <div 
                 className="card-art" 
-                style={{ backgroundImage: `url('${e.poster || `assets/${e.slug}.jpg`}')` }}
+                style={{ backgroundImage: `url('${e.poster || `/assets/${e.slug}.jpg`}')` }}
               ></div>
               <div className="card-shade"></div>
               <div className="card-top">
