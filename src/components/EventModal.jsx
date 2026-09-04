@@ -203,6 +203,12 @@ export default function EventModal({ eventIndex, events, onClose, onChangeEvent 
                     src={imgSrc} 
                     alt={`${currentEvent.title} highlight ${n + 1}`} 
                     loading="lazy"
+                    onError={(e) => {
+                      if (!e.target.dataset.retried) {
+                        e.target.dataset.retried = 'true';
+                        e.target.src = imgSrc.startsWith('/') ? imgSrc : `/${imgSrc}`;
+                      }
+                    }}
                   />
                 </div>
               ))}

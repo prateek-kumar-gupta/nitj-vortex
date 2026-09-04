@@ -135,9 +135,9 @@ export const events = [
     poster: '/assets/tez-ffmic-springs.jpg',
     positions: null,
     highlights: [
-      '/events-gallery/FFMIC FF Competition /Screenshot_20260903_212330_Instagram.jpg',
-      '/events-gallery/FFMIC FF Competition /Screenshot_20260903_212334_Instagram.jpg',
-      '/events-gallery/FFMIC FF Competition /Screenshot_20260903_212337_Instagram.jpg'
+      '/events-gallery/FFMIC/Screenshot_20260903_212330_Instagram.jpg',
+      '/events-gallery/FFMIC/Screenshot_20260903_212334_Instagram.jpg',
+      '/events-gallery/FFMIC/Screenshot_20260903_212337_Instagram.jpg'
     ]
   },
   {
