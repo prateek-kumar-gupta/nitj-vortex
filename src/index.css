@@ -1670,4 +1670,97 @@
   box-shadow: 0 0 15px rgba(255, 42, 34, 0.6);
 }
 
+/* SMOOTH PREVIOUS EVENTS SCROLLING & PROGRESS BAR MATCHING ACHIEVEMENTS */
+.events-track {
+  display: flex !important;
+  gap: 20px !important;
+  overflow-x: auto !important;
+  scroll-snap-type: x mandatory !important;
+  padding: 15px max(32px, calc((100vw - 1240px) / 2)) !important;
+  scrollbar-width: none !important;
+  -webkit-overflow-scrolling: touch !important;
+  overscroll-behavior-x: auto !important;
+}
+
+.events-track::-webkit-scrollbar {
+  display: none !important;
+}
+
+.scroll-btn {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 50% !important;
+  background: rgba(18, 12, 16, 0.88) !important;
+  border: 1px solid rgba(255, 42, 34, 0.4) !important;
+  color: #fff !important;
+  font-size: 22px !important;
+  display: grid !important;
+  place-items: center !important;
+  cursor: pointer !important;
+  z-index: 10 !important;
+  transition: all 0.25s ease !important;
+  backdrop-filter: blur(10px) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6) !important;
+}
+
+.scroll-btn:hover {
+  background: var(--red) !important;
+  border-color: var(--red) !important;
+  transform: translateY(-50%) scale(1.1) !important;
+}
+
+.scroll-btn.left {
+  left: 20px !important;
+}
+
+.scroll-btn.right {
+  right: 20px !important;
+}
+
+.events-progress-container {
+  width: min(1240px, calc(100% - 64px));
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.events-progress-track {
+  position: relative;
+  flex: 1;
+  max-width: 400px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.events-progress-thumb {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: var(--red);
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(255, 42, 34, 0.8);
+  transition: left 0.1s ease-out;
+}
+
+@media (max-width: 820px) {
+  .scroll-btn {
+    display: none !important;
+  }
+  .events-progress-container {
+    margin-top: 24px;
+    justify-content: space-between;
+  }
+  .events-progress-track {
+    max-width: 220px;
+  }
+}
+
+
 

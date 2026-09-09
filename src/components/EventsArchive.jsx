@@ -1,49 +1,38 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 
 export default function EventsArchive({ events, onSelectEvent }) {
   const trackRef = useRef(null);
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  const handleScroll = () => {
+    if (!trackRef.current) return;
+    const { scrollLeft, scrollWidth, clientWidth } = trackRef.current;
+    const maxScroll = scrollWidth - clientWidth;
+    if (maxScroll > 0) {
+      setScrollProgress((scrollLeft / maxScroll) * 100);
+    } else {
+      setScrollProgress(0);
+    }
+  };
 
   const scroll = (direction) => {
-    if (trackRef.current) {
-      const scrollAmount = direction === 'left' ? -410 : 410;
-      trackRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-    }
+    if (!trackRef.current) return;
+    const scrollAmount = 405; // 385px card + 20px gap
+    trackRef.current.scrollBy({
+      left: direction === 'left' ? -scrollAmount : scrollAmount,
+      behavior: 'smooth'
+    });
   };
 
-  const handleScroll = (e) => {
-    const track = e.target;
-    if (!track.firstElementChild) return;
-    const cardWidth = track.firstElementChild.getBoundingClientRect().width + 20;
-    const index = Math.round(track.scrollLeft / cardWidth);
-    if (index !== activeIndex && index >= 0 && index < events.length) {
-      setActiveIndex(index);
-    }
-  };
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener('resize', handleScroll);
+    return () => window.removeEventListener('resize', handleScroll);
+  }, [events.length]);
 
-  const scrollToEvent = (index) => {
-    if (trackRef.current && trackRef.current.firstElementChild) {
-      const cardWidth = trackRef.current.firstElementChild.getBoundingClientRect().width + 20;
-      trackRef.current.scrollTo({ left: index * cardWidth, behavior: 'smooth' });
-    }
-  };
-
-  React.useEffect(() => {
-    const track = trackRef.current;
-    if (!track) return;
-
-    const handleNativeWheel = (e) => {
-      if (e.deltaY !== 0) {
-        e.preventDefault();
-        track.scrollLeft += e.deltaY;
-      }
-    };
-
-    track.addEventListener('wheel', handleNativeWheel, { passive: false });
-    return () => {
-      track.removeEventListener('wheel', handleNativeWheel);
-    };
-  }, []);
+  const thumbWidth = Math.max(8, Math.round(100 / events.length));
+  const maxLeft = 100 - thumbWidth;
+  const thumbLeft = (scrollProgress / 100) * maxLeft;
 
   return (
     <section id="events" className="events-section">
@@ -109,16 +98,16 @@ export default function EventsArchive({ events, onSelectEvent }) {
         </button>
       </div>
 
-      <div className="track-footer">
-        <div className="scroll-dots">
-          {events.map((_, i) => (
-            <button
-              key={i}
-              className={`dot ${i === activeIndex ? 'active' : ''}`}
-              onClick={() => scrollToEvent(i)}
-              aria-label={`Scroll to event ${i + 1}`}
-            />
-          ))}
+      {/* Red Scroll Progress Indicator matching Achievements */}
+      <div className="events-progress-container">
+        <div className="events-progress-track">
+          <div 
+            className="events-progress-thumb" 
+            style={{ 
+              width: `${thumbWidth}%`, 
+              left: `${thumbLeft}%` 
+            }}
+          ></div>
         </div>
         <span className="event-count">
           {String(events.length).padStart(2, '0')} EVENTS
