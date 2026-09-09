@@ -1,4 +1,4 @@
-﻿import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 
 export default function AchievementsSection() {
   const achievements = [
@@ -12,7 +12,8 @@ export default function AchievementsSection() {
       title: "IIT Ropar Advitya '24 BGMI",
       desc: "Took 1st Place in the BGMI Championship at Advitya '24, the flagship technical fest of IIT Ropar.",
       stat: "Winners",
-      image: "/assets/achievement-iit-ropar-advitya24-bgmi.jpg"
+      image: "/assets/achievement-iit-ropar-advitya24-bgmi.jpg",
+      objectPosition: "center 20%"
     },
     {
       title: "Utkansh '25 Free Fire",
@@ -22,8 +23,8 @@ export default function AchievementsSection() {
     },
     {
       title: "Game Mania at GNA",
-      desc: "Represented NIT Jalandhar and dominated the arena at GNA University, bringing home top honors.",
-      stat: "Champions",
+      desc: "Represented NIT Jalandhar and dominated the arena at GNA University, bringing home top honors and competitive glory.",
+      stat: "Winners",
       image: "/assets/game-mania-gna.jpg"
     },
     {
@@ -42,13 +43,15 @@ export default function AchievementsSection() {
       title: "IIT Ropar Advitya '25 BGMI",
       desc: "Secured the Runners Up position in the competitive BGMI championship at Advitya '25, IIT Ropar.",
       stat: "Runners Up",
-      image: "/assets/achievement-iit-ropar-advitya25-bgmi.jpg"
+      image: "/assets/achievement-iit-ropar-advitya25-bgmi.jpg",
+      objectPosition: "center 25%"
     },
     {
       title: "NST Neutron '24 100K BGMI",
       desc: "Finished as Runners Up in the 100K prize pool BGMI tournament hosted at NST Neutron '24.",
       stat: "Runners Up",
-      image: "/assets/achievement-nst-neutron24-bgmi.jpg"
+      image: "/assets/achievement-nst-neutron24-bgmi.jpg",
+      objectPosition: "center 20%"
     },
     {
       title: "Krafton x Surge '24 BGMI",
@@ -60,12 +63,6 @@ export default function AchievementsSection() {
       title: "Inter-NIT Finalists",
       desc: "Competed fiercely and secured a top spot in the national inter-college esports tournament.",
       stat: "Grand Finalists"
-    },
-    {
-      title: "Game Mania at GNA",
-      desc: "Represented NIT Jalandhar and dominated the arena at GNA University, bringing home top honors and competitive glory.",
-      stat: "Champions",
-      image: "/assets/game-mania-gna.jpg"
     },
     {
       title: "Campus Record",
@@ -108,7 +105,7 @@ export default function AchievementsSection() {
     return () => window.removeEventListener('resize', handleScroll);
   }, []);
 
-  const thumbWidth = Math.max(12, Math.round(100 / achievements.length));
+  const thumbWidth = Math.max(10, Math.round(100 / achievements.length));
   const maxLeft = 100 - thumbWidth;
   const thumbLeft = (scrollProgress / 100) * maxLeft;
 
@@ -143,6 +140,7 @@ export default function AchievementsSection() {
                     src={item.image} 
                     alt={item.title} 
                     loading="lazy" 
+                    style={item.objectPosition ? { objectPosition: item.objectPosition } : undefined}
                     onError={(e) => {
                       if (!e.target.dataset.retried) {
                         e.target.dataset.retried = 'true';
