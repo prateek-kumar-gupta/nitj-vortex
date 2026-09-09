@@ -3,6 +3,60 @@
 export default function AchievementsSection() {
   const achievements = [
     {
+      title: "Valorant Campus Cup",
+      desc: "Champions at the premier national Valorant Campus Cup, outplaying top collegiate teams.",
+      stat: "Winners",
+      image: "/assets/achievement-valorant-campus-cup.jpg"
+    },
+    {
+      title: "IIT Ropar Advitya '24 BGMI",
+      desc: "Took 1st Place in the BGMI Championship at Advitya '24, the flagship technical fest of IIT Ropar.",
+      stat: "Winners",
+      image: "/assets/achievement-iit-ropar-advitya24-bgmi.jpg"
+    },
+    {
+      title: "Utkansh '25 Free Fire",
+      desc: "Champions in the Free Fire arena at Utkansh '25, securing victory with aggressive firepower.",
+      stat: "Winners",
+      image: "/assets/achievement-utkansh25-freefire.jpg"
+    },
+    {
+      title: "Game Mania at GNA",
+      desc: "Represented NIT Jalandhar and dominated the arena at GNA University, bringing home top honors.",
+      stat: "Champions",
+      image: "/assets/game-mania-gna.jpg"
+    },
+    {
+      title: "Utkansh '25 BGMI",
+      desc: "Clinched the Runners Up trophy in the high-stakes BGMI battleground at Utkansh '25.",
+      stat: "Runners Up",
+      image: "/assets/achievement-utkansh25-bgmi.jpg"
+    },
+    {
+      title: "Utkansh '25 Valorant",
+      desc: "Secured the 1st Runner Up title in the competitive Valorant showdown at Utkansh '25.",
+      stat: "Runners Up",
+      image: "/assets/achievement-utkansh25-valorant.jpg"
+    },
+    {
+      title: "IIT Ropar Advitya '25 BGMI",
+      desc: "Secured the Runners Up position in the competitive BGMI championship at Advitya '25, IIT Ropar.",
+      stat: "Runners Up",
+      image: "/assets/achievement-iit-ropar-advitya25-bgmi.jpg"
+    },
+    {
+      title: "NST Neutron '24 100K BGMI",
+      desc: "Finished as Runners Up in the 100K prize pool BGMI tournament hosted at NST Neutron '24.",
+      stat: "Runners Up",
+      image: "/assets/achievement-nst-neutron24-bgmi.jpg"
+    },
+    {
+      title: "Krafton x Surge '24 BGMI",
+      desc: "Battled through intense national qualifiers to reach the Grand Finals of Krafton x Surge '24.",
+      stat: "Finalists",
+      image: "/assets/achievement-krafton-surge24-bgmi.jpg"
+    },
+    {
       title: "Inter-NIT Finalists",
       desc: "Competed fiercely and secured a top spot in the national inter-college esports tournament.",
       stat: "Grand Finalists"
@@ -54,6 +108,10 @@ export default function AchievementsSection() {
     return () => window.removeEventListener('resize', handleScroll);
   }, []);
 
+  const thumbWidth = Math.max(12, Math.round(100 / achievements.length));
+  const maxLeft = 100 - thumbWidth;
+  const thumbLeft = (scrollProgress / 100) * maxLeft;
+
   return (
     <section id="achievements" className="achievements-section">
       <div className="section-header">
@@ -81,7 +139,17 @@ export default function AchievementsSection() {
               <div className="achieve-glow"></div>
               {item.image && (
                 <div className="achieve-card-img">
-                  <img src={item.image} alt={item.title} loading="lazy" />
+                  <img 
+                    src={item.image} 
+                    alt={item.title} 
+                    loading="lazy" 
+                    onError={(e) => {
+                      if (!e.target.dataset.retried) {
+                        e.target.dataset.retried = 'true';
+                        e.target.src = item.image.startsWith('/') ? item.image : `/${item.image}`;
+                      }
+                    }}
+                  />
                 </div>
               )}
               <div className="achieve-card-content">
@@ -103,14 +171,14 @@ export default function AchievementsSection() {
         </button>
       </div>
 
-      {/* Red Scroll Progress Indicator (Same as screenshot) */}
+      {/* Red Scroll Progress Indicator */}
       <div className="achieve-progress-container">
         <div className="achieve-progress-track">
           <div 
             className="achieve-progress-thumb" 
             style={{ 
-              width: '25%', 
-              left: `${scrollProgress * 0.75}%` 
+              width: `${thumbWidth}%`, 
+              left: `${thumbLeft}%` 
             }}
           ></div>
         </div>
