@@ -11,7 +11,7 @@ export default function UpcomingSection({ onOpenUpcoming }) {
             Stay ready. New tournaments, campus challenges and gaming experiences will appear here first.
           </p>
           <div className="upcoming-status">
-            <i></i><span>UPCOMING EVENT • DETAILS SOON</span>
+            <i></i><span>UPCOMING EVENT • 15 SEP 2026</span>
           </div>
         </div>
         <button 
@@ -25,9 +25,9 @@ export default function UpcomingSection({ onOpenUpcoming }) {
             <b>↗</b>
           </div>
           <div className="upcoming-card-body">
-            <span className="coming">COMING SOON</span>
-            <h3>THE NEXT<br />CHALLENGE</h3>
-            <p>The next VORTEX event will be announced soon.</p>
+            <span className="coming">15 SEP 2026</span>
+            <h3>CAMPUS CUP<br />SEASON 2</h3>
+            <p>Free Fire Max Tournament with ₹5,000 + 15,000 Diamonds Prize Pool!</p>
           </div>
           <div className="upcoming-card-footer">
             <span>VIEW DETAILS</span>

@@ -80,8 +80,8 @@ export default function UpcomingToast({ isAnyModalOpen, onOpenUpcoming }) {
         <div className="alert-label">
           <i></i> UPCOMING
         </div>
-        <h3>Something is<br /><span>loading...</span></h3>
-        <p>The next VORTEX event is on the way. Tap to see what's coming.</p>
+        <h3>15 SEP 2026<br /><span>MARK IT.</span></h3>
+        <p>The next VORTEX event is taking place on September 15, 2026. Tap for details.</p>
         <button className="alert-action" onClick={handleAction}>
           VIEW UPCOMING EVENT <span>↗</span>
         </button>

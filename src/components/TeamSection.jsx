@@ -17,7 +17,14 @@ export default function TeamSection() {
       label: "GEN 2.0",
       year: "CLASS OF '27",
       members: [
-        { name: "Incoming Roster", role: "TO BE ANNOUNCED", img: "/assets/vortex-logo.jpg" }
+        { name: "Divyanshu", role: "PRESIDENT", img: "/assets/team-gen2/divyanshu.jpg" },
+        { name: "Niraj", role: "VICE PRESIDENT", img: "/assets/team-gen2/niraj.jpg" },
+        { name: "Manik", role: "PR & SOCIAL MEDIA LEAD", img: "/assets/team-gen2/manik.jpg" },
+        { name: "Harshit", role: "PR & SOCIAL MEDIA LEAD", img: "/assets/team-gen2/harshit.jpg" },
+        { name: "Arnav", role: "MOBILE GAMING LEAD", img: "/assets/team-gen2/arnav.jpg" },
+        { name: "Tanay", role: "MOBILE GAMING LEAD", img: "/assets/team-gen2/tanay.jpg" },
+        { name: "Krish", role: "PC GAMING LEAD", img: "/assets/team-gen2/krish.jpg" },
+        { name: "Manas", role: "PC GAMING LEAD", img: "/assets/team-gen2/manas.jpg" }
       ]
     },
     v3: {

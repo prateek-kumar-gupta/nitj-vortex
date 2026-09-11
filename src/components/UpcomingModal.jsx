@@ -50,37 +50,37 @@ export default function UpcomingModal({ isOpen, onClose }) {
           ×
         </button>
         <div className="upcoming-modal-top">
-          <p className="modal-kicker">NEXT VORTEX EVENT</p>
-          <h2 id="upcomingTitle">THE NEXT<br /><span>CHALLENGE</span></h2>
-          <p>Official event details will be announced soon.</p>
+          <p className="modal-kicker">NIT JALANDHAR × FFM COMMUNITY INDIA</p>
+          <h2 id="upcomingTitle">CAMPUS CUP<br /><span>SEASON 2</span></h2>
+          <p>College Students & Outsiders can Participate in this Squad Battle Royal!</p>
         </div>
-        <div className="upcoming-hero">
-          <div className="upcoming-hero-grid"></div>
-          <div className="upcoming-hero-copy">
-            <span>COMING SOON</span>
-            <strong>GET READY.</strong>
-          </div>
+        <div className="upcoming-hero" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', background: '#111' }}>
+          <img 
+            src="/assets/campus-cup-s2.jpg" 
+            alt="Campus Cup Season 2 Poster"
+            style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+          />
         </div>
         <div className="upcoming-details-grid">
-          <div><span>DATE</span><strong>TO BE ANNOUNCED</strong></div>
-          <div><span>VENUE</span><strong>NIT JALANDHAR</strong></div>
-          <div><span>GAME</span><strong>TO BE ANNOUNCED</strong></div>
-          <div><span>PRIZE POOL</span><strong>TO BE ANNOUNCED</strong></div>
+          <div><span>DATE</span><strong>15 SEP 2026</strong></div>
+          <div><span>VENUE</span><strong>IT BUILDING, NIT JALANDHAR</strong></div>
+          <div><span>GAME</span><strong>FREE FIRE MAX</strong></div>
+          <div><span>PRIZE POOL</span><strong>₹5,000 + 15K DIAMONDS</strong></div>
         </div>
         <div className="upcoming-modal-bottom">
           <div>
-            <p className="content-kicker">WHAT TO EXPECT</p>
+            <p className="content-kicker">EVENT DETAILS</p>
             <p>
-              Competitive gaming, campus energy and another VORTEX experience. Follow the club for the official announcement, registration link and full event details.
+              Mode: Squad | Battle Royal. Get ready for an intense showdown at the IT Building. Register your squad now to secure your slot!
             </p>
           </div>
           <a 
             className="btn primary" 
-            href="https://www.instagram.com/nitj.esportsclub/" 
+            href="https://forms.gle/REXsdtEPqXh3fkMNA" 
             target="_blank" 
             rel="noopener noreferrer"
           >
-            FOLLOW VORTEX ↗
+            REGISTER NOW ↗
           </a>
         </div>
       </div>

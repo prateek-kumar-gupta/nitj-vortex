@@ -2,12 +2,14 @@ import React from 'react';
 
 export default function SponsorsSection() {
   const sponsors = [
-    { name: "JioGames", text: "JioGames" },
-    { name: "Riot", text: "RIOT" },
-    { name: "Krafton", text: "KRAFTON" },
-    { name: "Monster", text: "MONSTER" },
-    { name: "Kreo", text: "KREO" },
-    { name: "FFMIC", text: "FFMIC" }
+    { name: "Red Bull", logo: "/assets/sponsors/redbull.jpg" },
+    { name: "JioGames", logo: "/assets/sponsors/jiogames.jpg" },
+    { name: "Krafton", logo: "/assets/sponsors/krafton.jpg" },
+    { name: "Riot Games", logo: "/assets/sponsors/riotgames.jpg" },
+    { name: "Skoar", logo: "/assets/sponsors/skoar.jpg" },
+    { name: "Monster", logo: "/assets/sponsors/monster.jpg" },
+    { name: "Kreo", logo: "/assets/sponsors/kreo.jpg" },
+    { name: "FFMIC", logo: "/assets/sponsors/ffmic.jpg" }
   ];
 
   return (
@@ -18,13 +20,27 @@ export default function SponsorsSection() {
         <div className="sponsors-marquee">
           {sponsors.map((sponsor, i) => (
             <div key={i} className="sponsor-logo-placeholder">
-              <span>{sponsor.text}</span>
+              <img 
+                src={sponsor.logo} 
+                alt={sponsor.name}
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = `https://placehold.co/150x50/111/FFF?text=${sponsor.name}`;
+                }}
+              />
             </div>
           ))}
           {/* Duplicate for infinite scroll effect */}
           {sponsors.map((sponsor, i) => (
             <div key={i + 10} className="sponsor-logo-placeholder">
-              <span>{sponsor.text}</span>
+              <img 
+                src={sponsor.logo} 
+                alt={sponsor.name}
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = `https://placehold.co/150x50/111/FFF?text=${sponsor.name}`;
+                }}
+              />
             </div>
           ))}
         </div>
