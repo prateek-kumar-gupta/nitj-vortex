@@ -1,6 +1,24 @@
 export const events = [
   {
     number: '01',
+    slug: 'campus-cup-season-2',
+    title: 'CAMPUS CUP SEASON 2',
+    subtitle: 'NIT Jalandhar × FFM Community India',
+    kicker: 'FREE FIRE MAX',
+    date: '15 September 2026',
+    venue: 'IT Building, NIT Jalandhar',
+    format: 'Squad | Battle Royal',
+    prize: '₹5,000 + 15,000 Diamonds',
+    game: 'FREE FIRE MAX',
+    tag: 'CAMPUS CUP S2',
+    participants: '400+',
+    description: 'NIT Jalandhar × FFM Community India Campus Cup Season 2 brought high-stakes Free Fire Max action to campus. Squads clashed in an intense Battle Royal showdown at the IT Building, competing for ₹5,000 INR and 15,000 Diamonds.',
+    poster: '/assets/campus-cup-s2.jpg',
+    positions: null,
+    highlights: null
+  },
+  {
+    number: '02',
     slug: 'monster-campus-unleashed',
     title: 'MONSTER CAMPUS UNLEASHED',
     subtitle: 'BGMI Fest Sponsored by Monster Energy',
@@ -38,7 +56,7 @@ export const events = [
     ]
   },
   {
-    number: '02',
+    number: '03',
     slug: 'bgmi-showdown',
     title: 'BGMI SHOWDOWN',
     subtitle: 'Gear Up. Survive. Conquer.',
@@ -63,7 +81,7 @@ export const events = [
     ]
   },
   {
-    number: '03',
+    number: '04',
     slug: 'orientation-2k26',
     title: 'ORIENTATION 2K26',
     subtitle: 'Welcoming Freshers to the VORTEX Arena',
@@ -97,7 +115,7 @@ export const events = [
     ]
   },
   {
-    number: '04',
+    number: '05',
     slug: 'tez-ffmic-springs',
     title: 'TEZ FFMIC SPRINGS 2026',
     subtitle: 'Watch Party & Competition',
@@ -119,7 +137,7 @@ export const events = [
     ]
   },
   {
-    number: '05',
+    number: '06',
     slug: 'arena-x',
     title: 'ARENA-X',
     subtitle: 'Part of Utkansh — The Biggest College Tech Fest',
@@ -150,7 +168,7 @@ export const events = [
     ]
   },
   {
-    number: '06',
+    number: '07',
     slug: 'kreo-aero-klash',
     title: 'KREO AERO KLASH',
     subtitle: 'Fold. Aim. Launch. Dominate.',
@@ -175,7 +193,7 @@ export const events = [
     ]
   },
   {
-    number: '07',
+    number: '08',
     slug: 'jio-games-campus-cup',
     title: 'JIO GAMES CAMPUS CUP',
     subtitle: 'Valorant Campus Tournament',
@@ -209,7 +227,7 @@ export const events = [
     ]
   },
   {
-    number: '08',
+    number: '09',
     slug: 'genesis-cup',
     title: 'GENESIS CUP',
     subtitle: 'Exclusively for NIT Students',
@@ -227,7 +245,7 @@ export const events = [
     highlights: null
   },
   {
-    number: '09',
+    number: '10',
     slug: 'carnage-2-0',
     title: 'CARNAGE 2.0',
     subtitle: 'The Ultimate Multi-Title Campus LAN',
@@ -245,7 +263,7 @@ export const events = [
     highlights: null
   },
   {
-    number: '10',
+    number: '11',
     slug: 'weekend-punisher',
     title: 'WEEKEND PUNISHER',
     subtitle: 'High-Stakes Duo Showdown',
@@ -263,7 +281,7 @@ export const events = [
     highlights: null
   },
   {
-    number: '11',
+    number: '12',
     slug: 'the-showdown',
     title: 'THE SHOWDOWN',
     subtitle: 'Three-Day Triple-Threat Esports Arena',
@@ -281,7 +299,7 @@ export const events = [
     highlights: null
   },
   {
-    number: '12',
+    number: '13',
     slug: 'bgmi-battle',
     title: 'BGMI BATTLE',
     subtitle: 'Pair vs Pair Battleground',

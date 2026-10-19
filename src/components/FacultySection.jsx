@@ -29,19 +29,19 @@ export default function FacultySection() {
         </div>
       </div>
 
-      {/* Tier 3: Coordinators (Swapped) */}
+      {/* Tier 3: Coordinators */}
       <div className="people-tier">
-        <div className="person-card">
-          <div className="person-img"><img src="/assets/urvashi.webp" alt="Dr. Urvashi" loading="lazy" /></div>
-          <div className="person-info">
-            <h4>Dr. Urvashi</h4>
-            <span>COORDINATOR</span>
-          </div>
-        </div>
         <div className="person-card">
           <div className="person-img"><img src="/assets/amritpal_singh.jpg" alt="Dr. Amritpal Singh" loading="lazy" /></div>
           <div className="person-info">
             <h4>Dr. Amritpal Singh</h4>
+            <span>COORDINATOR</span>
+          </div>
+        </div>
+        <div className="person-card">
+          <div className="person-img"><img src="/assets/krishna_pal_sharma.jpg" alt="Dr. Krishna Pal Sharma" loading="lazy" /></div>
+          <div className="person-info">
+            <h4>Dr. Krishna Pal Sharma</h4>
             <span>COORDINATOR</span>
           </div>
         </div>
