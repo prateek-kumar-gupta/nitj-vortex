@@ -8,29 +8,29 @@ export default function UpcomingSection({ onOpenUpcoming }) {
           <p className="eyebrow">WHAT'S NEXT</p>
           <h2>THE NEXT<br /><span>VORTEX</span></h2>
           <p className="section-intro">
-            Stay ready. New tournaments, campus challenges and gaming experiences will appear here first.
+            NITJ, ready to fly?! Red Bull Wings Cup is live on campus today and tomorrow. Play EA SPORTS FC 27, claim your free Red Bull can, and compete for the exclusive Wings Cup Jersey!
           </p>
           <div className="upcoming-status">
-            <i></i><span>NEXT EVENT • TO BE ANNOUNCED</span>
+            <i></i><span>LIVE EVENT • 27–28 OCTOBER 2026</span>
           </div>
         </div>
         <button 
           className="upcoming-card" 
           onClick={onOpenUpcoming}
-          aria-label="Open upcoming event details"
+          aria-label="Open Red Bull Wings Cup details"
         >
           <div className="upcoming-card-glow"></div>
           <div className="upcoming-card-top">
-            <span>VORTEX / NEXT</span>
+            <span>VORTEX × RED BULL</span>
             <b>↗</b>
           </div>
           <div className="upcoming-card-body">
-            <span className="coming">COMING SOON</span>
-            <h3>THE NEXT<br />CHALLENGE</h3>
-            <p>Stay tuned for our upcoming tournaments, campus challenges and esports events.</p>
+            <span className="coming">TODAY & TOMORROW</span>
+            <h3>RED BULL<br />WINGS CUP</h3>
+            <p>Play EA SPORTS FC 27, get a free Red Bull can & compete for the exclusive Wings Cup Jersey!</p>
           </div>
           <div className="upcoming-card-footer">
-            <span>VIEW DETAILS</span>
+            <span>VIEW DETAILS & REGISTER</span>
             <span>01</span>
           </div>
         </button>

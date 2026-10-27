@@ -78,12 +78,12 @@ export default function UpcomingToast({ isAnyModalOpen, onOpenUpcoming }) {
       <div className="alert-accent"></div>
       <div className="alert-content">
         <div className="alert-label">
-          <i></i> UPCOMING
+          <i></i> LIVE EVENT
         </div>
-        <h3>STAY TUNED<br /><span>NEW EVENTS.</span></h3>
-        <p>The next VORTEX tournament is in the works. Tap for details and updates.</p>
+        <h3>RED BULL<br /><span>WINGS CUP</span></h3>
+        <p>Play EA SPORTS FC 27 today & tomorrow! Get a free Red Bull can + exclusive Wings Cup Jersey.</p>
         <button className="alert-action" onClick={handleAction}>
-          VIEW DETAILS <span>↗</span>
+          VIEW DETAILS & REGISTER <span>↗</span>
         </button>
       </div>
     </div>
